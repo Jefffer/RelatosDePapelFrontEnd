@@ -87,11 +87,11 @@ import Cart from "../Cart/Cart";
 //   },
 // ];
 
-const MainPage = () => {
+const MainPage = ({ cart, onAddToCart, onRemoveFromCart }) => {
   const [books, setBooks] = useState([]);
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [cart, setCart] = useState([]);
+//   const [cart, setCart] = useState([]);
 
   // Cargar los datos del JSON
   useEffect(() => {
@@ -102,14 +102,6 @@ const MainPage = () => {
   }, []);
 
   const handleSearchChange = (e) => setSearchTerm(e.target.value);
-
-  const handleAddToCart = (book) => {
-    setCart([...cart, book]);
-  };
-
-  const handleRemoveFromCart = (bookId) => {
-    setCart(cart.filter((book) => book.id !== bookId));
-  };
 
   const filteredBooks = books.filter((book) => {
     const searchText = searchTerm.toLowerCase();
@@ -164,7 +156,7 @@ const MainPage = () => {
                     <div className="card-body">
                       <button
                         className="btn btn-primary"
-                        onClick={() => handleAddToCart(book)}
+                        onClick={() => onAddToCart(book)}
                       >
                         Agregar al carrito 🛒
                       </button>
@@ -176,7 +168,7 @@ const MainPage = () => {
           </div>
         </div>
 
-        <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart} />
+        <Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />
       </main>
     </div>
   );

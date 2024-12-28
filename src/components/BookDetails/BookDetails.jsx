@@ -4,8 +4,7 @@ import "./BookDetails.css";
 import Header from "../Header/Header";
 import Cart from "../Cart/Cart";
 
-
-const BookView = ({ cart, handleRemoveFromCart }) => {
+const BookView = ({ cart, onAddToCart, onRemoveFromCart }) => {
   const { id } = useParams(); // Obtener el id del libro desde la URL
   const [book, setBook] = useState(null);
 
@@ -20,33 +19,41 @@ const BookView = ({ cart, handleRemoveFromCart }) => {
   }, [id]);
 
   if (!book) {
-    return <p>Libro no encontrado</p>;
+    return <p>Libro no encontrado!!</p>;
   }
 
   return (
     <div className="book-view">
       <Header />
-      <main className="main-content d-flex">
+      <main className="main-container">
         <div className="book-details">
-          <img
-            src={book.cover}
-            alt={book.title}
-            className="book-cover-details"
-          />
-          <h2>{book.title}</h2>
-          <p>Autor: {book.author}</p>
-          <p>Precio: ${book.price}</p>
-          <p>
-            Descripción:{" "}
-            {book.description ||
-              "Este libro aún no tiene descripción disponible."}
-          </p>
-          <Link to="/main" className="btn btn-secondary">
-            Volver al catálogo
-          </Link>
-          <button className="btn btn-primary">Agregar al carrito</button>
+          <div className="book-image">
+            <img
+              src={book.cover}
+              alt={book.title}
+              className="book-cover-details"
+            />
+          </div>
+          <div className="book-info">
+            <h2>{book.title}</h2>
+            <p><strong>Autor: {book.author}</strong></p>
+            <p id="price-detail">{book.price}€</p>
+            <p>{book.description}</p>
+
+            <button
+              className="btn btn-primary"
+              onClick={() => onAddToCart(book)}
+            >
+              Agregar al carrito
+            </button>
+            <br />
+            <br />
+            <Link to="/main" className="btn btn-secondary">
+              Volver al catálogo
+            </Link>
+          </div>
         </div>
-        {/* <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart}/> */}
+        <Cart cart={cart} onRemoveFromCart={onRemoveFromCart} />
       </main>
     </div>
   );

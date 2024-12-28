@@ -4,20 +4,23 @@
     "title": "Estudio en Escarlata",
     "author": "Arthur Conan Doyle",
     "price": 16.8,
-    "cover": "https://m.media-amazon.com/images/I/71j2VixYTmS._AC_UF894,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/71j2VixYTmS._AC_UF894,1000_QL80_.jpg",
+    "description": "La primera novela de Sherlock Holmes, donde se presenta al famoso detective y su amigo Watson. Juntos resuelven un misterioso caso de asesinato en Londres y fundan una de las duplas más icónicas de la literatura."
   },
   {
     "id": 6345,
     "title": "1984",
     "author": "George Orwell",
     "price": 15.9,
-    "cover": "https://m.media-amazon.com/images/I/612ADI+BVlL._AC_UF894,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/612ADI+BVlL._AC_UF894,1000_QL80_.jpg",
+    "description": "Una novela distópica que explora los peligros del totalitarismo y la vigilancia extrema. La historia sigue a Winston Smith, un hombre que trabaja para el Partido y lucha por mantener su humanidad en un mundo controlado por el Gran Hermano."
   },
   {
     "id": 9845,
     "title": "Harry Potter y el prisionero de Azkaban",
     "author": "J.K. Rowling",
-    "price": 25,
+    "price": 24.5,
+    "description": "Tercer libro de la saga de Harry Potter. El prisionero de Azkaban narra los hechos que suceden a lo largo del tercer curso de su protagonista, Harry Potter, en el Colegio Hogwarts. Aunque en la novela no aparece el antagonista de la serie, lord Voldemort, la trama presenta una nueva situación de riesgo para el personaje central: Sirius Black, uno de los asesinos de Voldemort, se fuga de la prisión de Azkaban para asesinar a Harry y dejar el camino libre para el regreso de su amo al poder. Las autoridades de la comunidad mágica reaccionan ante la noticia cercando el colegio y otros lugares de su jurisdicción con los dementores, criaturas tenebrosas que ofician de carceleros en Azkaban.",
     "cover": "https://m.media-amazon.com/images/I/81k9yx9N5+L._AC_UF894,1000_QL80_.jpg"
   },
   {
@@ -25,48 +28,55 @@
     "title": "El Señor de los Anillos: La Comunidad del Anillo",
     "author": "J.R.R. Tolkien",
     "price": 35.5,
-    "cover": "https://m.media-amazon.com/images/I/91GGJZ19aEL._UF1000,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/91GGJZ19aEL._UF1000,1000_QL80_.jpg",
+    "description": "La primera parte de la épica trilogía de fantasía, donde un grupo de héroes se embarca en una misión para destruir un anillo poderoso. La historia sigue a Frodo Bolsón y sus amigos mientras viajan a través de la Tierra Media para enfrentarse al Señor Oscuro Sauron y salvar a su mundo de la oscuridad."
   },
   {
     "id": 3925,
     "title": "La Santa Biblia",
     "author": "El mismísimo Jesucristo",
     "price": 22,
-    "cover": "https://m.media-amazon.com/images/I/61HqoXEqQ9L._AC_UF894,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/61HqoXEqQ9L._AC_UF894,1000_QL80_.jpg",
+    "description": "El libro sagrado del cristianismo, que contiene el Antiguo y el Nuevo Testamento. La Biblia es una colección de textos religiosos y espirituales que han influido en la cultura y la historia de la humanidad durante siglos y continúan siendo una fuente de inspiración y guía para millones de personas en todo el mundo."
   },
   {
     "id": 1942,
     "title": "Berzerk Volumen 1",
     "author": "Kentaro Miura",
     "price": 28,
-    "cover": "https://m.media-amazon.com/images/I/71lnvXSiITL._AC_UF894,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/71lnvXSiITL._AC_UF894,1000_QL80_.jpg",
+    "description": "Comic de fantasía oscura que sigue las aventuras de Guts, un guerrero solitario que lucha contra demonios y seres sobrenaturales en un mundo medieval. La serie es conocida por su violencia gráfica y su compleja trama, que explora temas como la venganza, la redención y la lucha entre el bien y el mal."
   },
   {
     "id": 9453,
     "title": "Don Quijote de la Mancha",
     "author": "Miguel de Cervantes",
     "price": 29,
-    "cover": "https://m.media-amazon.com/images/I/91CIwR3QU1L._UF1000,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/91CIwR3QU1L._UF1000,1000_QL80_.jpg",
+    "description": "La historia de un hidalgo que se vuelve loco leyendo libros de caballerías y decide convertirse en un caballero andante. Junto a su fiel escudero Sancho Panza, Don Quijote emprende aventuras absurdas y cómicas que lo llevan a enfrentarse a molinos de viento, rebaños de ovejas y otros peligros imaginarios."
   },
   {
     "id": 3452,
     "title": "El coronel no tiene quien le escriba",
     "author": "Gabriel García Márquez",
     "price": 16.9,
-    "cover": "https://m.media-amazon.com/images/I/811MoGVEr4L._AC_UF894,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/811MoGVEr4L._AC_UF894,1000_QL80_.jpg",
+    "description": "Una novela corta que sigue la vida de un coronel retirado y su esposa en un pueblo olvidado de Colombia. El coronel espera ansiosamente una carta que le promete una pensión por sus servicios en la guerra, pero la carta nunca llega. Mientras tanto, lucha contra la pobreza y la desesperación en un mundo que parece haberlo olvidado."
   },
   {
     "id": 9556,
     "title": "Cien años de soledad",
     "author": "Gabriel García Márquez",
     "price": 24.9,
-    "cover": "https://m.media-amazon.com/images/I/91TvVQS7loL._AC_UF894,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/91TvVQS7loL._AC_UF894,1000_QL80_.jpg",
+    "description": "La obra maestra de García Márquez, que narra la historia de la familia Buendía en el pueblo de Macondo. La novela combina realismo mágico con elementos de la historia de Colombia y la cultura latinoamericana para crear un mundo único y fascinante lleno de personajes inolvidables y eventos extraordinarios."
   },
   {
     "id": 1001,
     "title": "World of Warcraft: Nuevos sabores de Azeroth",
     "author": "Chelsea Monroe-Cassel",
     "price": 27.9,
-    "cover": "https://m.media-amazon.com/images/I/81YE9xjPz7L._AC_UF894,1000_QL80_.jpg"
+    "cover": "https://m.media-amazon.com/images/I/81YE9xjPz7L._AC_UF894,1000_QL80_.jpg",
+    "description": "Un libro de cocina inspirado en el mundo de World of Warcraft, con recetas de platos famosos de Azeroth. Desde el estofado de lobo hasta el pastel de carne de kodo, este libro te enseñará a preparar deliciosas comidas dignas de un aventurero de la Horda o la Alianza en el mundo de Warcraft."
   }
 ]
