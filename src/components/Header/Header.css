@@ -1,0 +1,10 @@
+#title {
+  margin: auto;
+}
+
+.main-header {
+  background-color: #8298c6;
+  color: #e9e7db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+}
