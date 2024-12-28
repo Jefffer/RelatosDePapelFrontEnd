@@ -19,10 +19,13 @@ const Landing = () => {
         <h1 className="title display-4 mb-3">RELATOS DE PAPEL 📔</h1>
         <div className="subtitle">
           <p className="my-name">Por: Jefferson Rodríguez</p>
-
-          Aquí podrás encontrar una gran selección de libros en formato físico y digital.
+          Aquí podrás encontrar una gran selección de libros en formato físico y
+          digital.
           <br />
-          <strong>Serás redirigido automáticamente a la página principal en 5 segundos...</strong>
+          <strong>
+            Serás redirigido automáticamente a la página principal en 5
+            segundos...
+          </strong>
         </div>
       </div>
     </div>

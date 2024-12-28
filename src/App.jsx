@@ -6,6 +6,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Landing from "./components/Landing/Landing";
 import MainPage from "./components/MainPage/MainPage";
+import BookView from "./components/BookDetails/BookDetails";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/main" element={<MainPage />} />
-        {/* Puedes agregar más rutas aquí */}
+        <Route path="/book/:id" element={<BookView />} />
       </Routes>
     </Router>
   );
