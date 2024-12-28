@@ -1,0 +1,44 @@
+/* .access-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8298c6;
+  font-family: sans-serif;
+} */
+
+.title {
+  font-size: 5.5rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+
+/* Asegura que el fondo ocupe toda la pantalla */
+.access-view {
+  background-color: #8298c6; /* Fondo personalizado */
+  width: 100vw; /* Ancho completo de la ventana */
+  height: 100vh; /* Altura completa de la ventana */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  padding: 0; /* Elimina cualquier padding por defecto */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo para el texto */
+.content-container {
+  color: #e9e7db; /* Color de texto personalizado */
+}
+
+/* Define clases personalizadas */
+.bg-primary {
+  background-color: #8298c6 !important; /* Fondo personalizado */
+}
+
+.text-custom {
+  color: #e9e7db !important; /* Color de texto personalizado */
+}
+  
