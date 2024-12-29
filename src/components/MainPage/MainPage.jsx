@@ -19,7 +19,7 @@ const MainPage = ({ cart, onAddToCart, onRemoveFromCart }) => {
             <input
               type="text"
               className="form-control search-bar"
-              placeholder="Buscar libros..."
+              placeholder="Buscar libros... 🔎"
               value={searchTerm}
               onChange={handleSearchChange}
             />

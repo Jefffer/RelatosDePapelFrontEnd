@@ -35,6 +35,21 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  /* font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; */
+  font-family: "Poppins", sans-serif; /* Una fuente moderna */
+  color: #555; /* Azul suave y moderno */
+  font-size: 2rem;
+  font-weight: 600; /* Negrita moderada */
+  text-transform: uppercase; /* Para un toque más profesional */
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4a90e2; /* Línea decorativa */
+  padding-bottom: 0.5rem;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

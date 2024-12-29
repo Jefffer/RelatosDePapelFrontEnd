@@ -34,6 +34,8 @@ function App() {
     setCart(cart.filter((book) => book.id !== bookId));
   };
 
+  const handleClearCart = () => setCart([]);
+
   return (
     <Router>
       <Routes>
@@ -60,7 +62,7 @@ function App() {
         />
         <Route
           path="/checkout"
-          element={<Checkout cart={cart} onRemoveFromCart={handleRemoveFromCart} />}
+          element={<Checkout cart={cart} onClearCart={handleClearCart} />}
         />
       </Routes>
     </Router>
