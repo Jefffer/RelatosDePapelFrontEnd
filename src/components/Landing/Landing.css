@@ -16,28 +16,36 @@
   font-size: 1.3rem;
 }
 
-/* Asegura que el fondo ocupe toda la pantalla */
 .access-view {
-  background-color: #8298c6; /* Fondo personalizado */
-  width: 100vw; /* Ancho completo de la ventana */
-  height: 100vh; /* Altura completa de la ventana */
-  margin: 0; /* Elimina cualquier margen por defecto */
-  padding: 0; /* Elimina cualquier padding por defecto */
+  background-color: #8298c6; 
+  width: 100vw; 
+  height: 100vh; 
+  margin: 0; 
+  padding: 0; 
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center; 
+  align-items: center; 
 }
 
-/* Estilo para el texto */
 .content-container {
-  color: #e9e7db; /* Color de texto personalizado */
+  color: #e9e7db; 
 }
 
-/* Define clases personalizadas */
 .bg-primary {
-  background-color: #8298c6 !important; /* Fondo personalizado */
+  background-color: #8298c6 !important;
 }
 
 .text-custom {
-  color: #e9e7db !important; /* Color de texto personalizado */
+  color: #e9e7db !important;
+}
+
+#countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6347;
+  background-color: #e9e7db;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: inline-block;
 }
