@@ -14,13 +14,8 @@ const Checkout = ({ cart, onClearCart }) => {
       return;
     }
 
-    // Simula el pago exitoso
     alert("Pedido realizado con éxito!!! 💰✅");
-
-    // Vaciar el carrito
     onClearCart();
-
-    // Redirigir a la página principal
     navigate("/main");
   };
 
