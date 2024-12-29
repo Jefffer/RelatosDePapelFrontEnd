@@ -40,8 +40,9 @@ const Cart = ({ cart, onRemoveFromCart }) => {
             <span>Subtotal: </span>
             <span className="total-price">{totalPrice.toFixed(2)}€</span>
             <br />
+            <br />
             <Link to="/checkout" className="btn btn-primary">
-              Ir al checkout
+              Ir al checkout 👉
             </Link>
           </div>
         </>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Checkout.css";
 import Header from "../Header/Header";
 
@@ -88,6 +88,10 @@ const Checkout = ({ cart, onClearCart }) => {
         ) : (
           <p>El carrito está vacío. No hay libros para procesar.</p>
         )}
+        <br />
+        <Link to="/main" className="btn btn-secondary">
+          👈 Volver al catálogo
+        </Link>
       </main>
     </div>
   );

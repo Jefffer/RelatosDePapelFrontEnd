@@ -47,7 +47,7 @@ const BookView = ({ cart, onAddToCart, onRemoveFromCart }) => {
             <br />
             <br />
             <Link to="/main" className="btn btn-secondary">
-              Volver al catálogo
+              👈 Volver al catálogo
             </Link>
           </div>
         </div>
