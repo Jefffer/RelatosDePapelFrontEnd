@@ -10,7 +10,7 @@ const Landing = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/main");
-    }, 115000);
+    }, 5000);
 
     // Para la limpieza del temporizador
     return () => clearTimeout(timer); 
