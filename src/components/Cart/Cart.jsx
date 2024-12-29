@@ -1,9 +1,13 @@
 import React from "react";
 import "./Cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = ({ cart, onRemoveFromCart }) => {
-//   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
-  const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  //   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+  const totalPrice = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   return (
     <aside className="cart-container">
@@ -33,8 +37,12 @@ const Cart = ({ cart, onRemoveFromCart }) => {
             ))}
           </ul>
           <div className="cart-total d-flex justify-content-between align-items-center mt-3">
-            <span>Total: </span>
-            <span className="total-price">${totalPrice.toFixed(2)}€</span>
+            <span>Subtotal: </span>
+            <span className="total-price">{totalPrice.toFixed(2)}€</span>
+            <br />
+            <Link to="/checkout" className="btn btn-primary">
+              Ir al checkout
+            </Link>
           </div>
         </>
       ) : (

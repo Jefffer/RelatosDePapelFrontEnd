@@ -1,0 +1,28 @@
+.checkout-view {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .checkout-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .checkout-summary {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .item-total {
+    font-weight: bold;
+  }
+  

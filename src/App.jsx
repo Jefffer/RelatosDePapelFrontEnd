@@ -12,6 +12,7 @@ import {
 import Landing from "./components/Landing/Landing";
 import MainPage from "./components/MainPage/MainPage";
 import BookView from "./components/BookDetails/BookDetails";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -56,6 +57,10 @@ function App() {
               onRemoveFromCart={handleRemoveFromCart}
             />
           }
+        />
+        <Route
+          path="/checkout"
+          element={<Checkout cart={cart} onRemoveFromCart={handleRemoveFromCart} />}
         />
       </Routes>
     </Router>

@@ -1,22 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams, Link } from "react-router-dom";
 import "./BookDetails.css";
 import Header from "../Header/Header";
 import Cart from "../Cart/Cart";
+import useBooks from "../../hooks/useBooks";
 
 const BookView = ({ cart, onAddToCart, onRemoveFromCart }) => {
-  const { id } = useParams(); // Obtener el id del libro desde la URL
-  const [book, setBook] = useState(null);
+  // Para obtener el id del libro que se está visualizando
+  const { id } = useParams();
 
-  useEffect(() => {
-    fetch("/books-info.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const foundBook = data.find((b) => b.id === parseInt(id));
-        setBook(foundBook);
-      })
-      .catch((error) => console.error("Error al cargar libros:", error));
-  }, [id]);
+  // Custom hook para obtener la información de los libros
+  const { findBookById } = useBooks();
+
+  const book = findBookById(id);
 
   if (!book) {
     return <p>Libro no encontrado!!</p>;
@@ -36,7 +32,9 @@ const BookView = ({ cart, onAddToCart, onRemoveFromCart }) => {
           </div>
           <div className="book-info">
             <h2>{book.title}</h2>
-            <p><strong>Autor: {book.author}</strong></p>
+            <p>
+              <strong>Autor: {book.author}</strong>
+            </p>
             <p id="price-detail">{book.price}€</p>
             <p>{book.description}</p>
 
