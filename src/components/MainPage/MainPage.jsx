@@ -14,7 +14,7 @@ const MainPage = ({ cart, onAddToCart, onRemoveFromCart }) => {
 
       <main className="main-content d-flex">
         <div className="books-container p-4">
-          <h2>Catálogo disponible</h2>
+          <h2>Catálogo disponible - test</h2>
           <div id="search-bar">
             <input
               type="text"
