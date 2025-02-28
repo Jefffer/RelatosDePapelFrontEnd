@@ -11,7 +11,6 @@ const MainPage = ({ cart, onAddToCart, onRemoveFromCart }) => {
   return (
     <div className="main-page">
       <Header />
-
       <main className="main-content d-flex">
         <div className="books-container p-4">
           <h2>Catálogo disponible</h2>
@@ -27,17 +26,19 @@ const MainPage = ({ cart, onAddToCart, onRemoveFromCart }) => {
 
           <div className="books-grid">
             {filteredBooks.length === 0 ? (
-              <p>
-                No se encontraron libros, prueba a buscar por otro Título o
-                Autor.
-              </p>
+              <p>No se encontraron libros, prueba con otro título o autor.</p>
             ) : (
-              filteredBooks.map((book) => (
-                <div key={book.id} className="book-card">
-                  {/* <div className="card book-card"> */}
+              filteredBooks.map((book) => {
+                // Ruta de la imagen: Si no existe, usa una imagen por defecto
+                const coverImage = book.cover
+                  ? `/${book.cover}.jpg`
+                  : "/placeholder.png";
+
+                return (
+                  <div key={book.id} className="book-card">
                     <Link to={`/book/${book.id}`} className="btn btn-primary">
                       <img
-                        src={book.cover}
+                        src={coverImage}
                         className="card-img-top book-cover"
                         alt={book.title}
                       />
@@ -49,18 +50,18 @@ const MainPage = ({ cart, onAddToCart, onRemoveFromCart }) => {
                         {book.price}€
                       </p>
                     </div>
-
                     <div className="card-body">
                       <button
                         className="btn btn-primary"
                         onClick={() => onAddToCart(book)}
+                        disabled={book.stock <= 0}
                       >
-                        Agregar al carrito 🛒
+                        {book.stock > 0 ? "Agregar al carrito 🛒" : "Agotado"}
                       </button>
                     </div>
                   </div>
-                // </div>
-              ))
+                );
+              })
             )}
           </div>
         </div>
